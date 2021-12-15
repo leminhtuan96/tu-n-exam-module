@@ -2,64 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form Đăng Kí</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Form Đăng Kí Người Dùng</title>
 </head>
 <body>
-<form action="">
-    <table>
-        <tr>
-            <th colspan="3" class="b"  >ĐĂNG KÍ HỌC VIÊN</th>
-        </tr>
-        <tr>
-            <td class="a">Họ và Tên</td>
-            <td colspan="2"><input type="text"></td>
-        </tr>
-        <tr>
-            <td class="a">Ngày Sinh</td>
-            <td><input type="date"></td>
-        </tr>
-        <tr>
-            <td class="a">Giới tính</td>
-            <td>
-                <input type="radio" name="gender" >Nam
-                <input type="radio" name="gender" >Nữ
-            </td>
-        </tr>
-        <tr>
-            <td class="c">Địa Chỉ</td>
-            <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
-        </tr>
-        <tr>
-            <td class="a">Lớp</td>
-            <td>
-                <select name="Chọn lớp">
-                    <option value="">Chọn Lớp</option>
-                    <option value="1">Lớp 1</option>
-                    <option value="2">Lớp 2</option>
-                    <option value="3">Lớp 3</option>
-                    <option value="4">Lớp 4</option>
-                    <option value="5">Lớp 5</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td class="a">Email</td>
-            <td><input type="email"></td>
-        </tr>
-        <tr>
-            <td class="a">Số Điện Thoại</td>
-            <td><input type="tel"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Đăng Kí">
-                <input type="reset" value="Nhập Lại">
-            </td>
-        </tr>
-    </table>
-</form>
 
+
+<form action=" http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <h3>Họ Và Tên:</h3>
+    <input type="text"> <br>
+    <h3>Email:</h3>
+    <input type="email"> <br>
+    <h3>Số Điện Thoại:</h3>
+    <input type="text"> <br>
+    <h3>Giới Tính:</h3>
+    <label><input type="radio" name="gender">Nam</label>
+    <label><input type="radio" name="gender">Nữ</label> <br>
+    <input type="submit" value="Đăng Kí">
+</form>
 </body>
 </html>
