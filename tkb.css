@@ -1,0 +1,27 @@
+.h1{
+    color: blue;
+    text-align: center;
+    font-size: 27px;
+}
+.a{
+    color: cornflowerblue;
+}
+.b{
+    text-align: right;
+    color: cornflowerblue;
+}
+.c{
+    border: 1px solid#000;
+    border-collapse: collapse;
+}
+.d{
+    background: yellow;
+    color: black;
+}
+.e{
+    background: darkorange;
+    color: black;
+}
+.head{
+    width: 515px;
+}
