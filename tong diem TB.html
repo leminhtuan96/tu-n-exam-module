@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong Diem Trung Binh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>vat ly</th>
+        <th>hoa</th>
+        <th>sinh</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="a"></td>
+        <td><input type="text" id="b"></td>
+        <td><input type="text" id="c"></td>
+        <td><button onclick="kq1()" id="d">tinh tong</button> </td>
+        <td><button onclick="kq2()" id="e">tinh diem TB</button> </td>
+        <td><button onclick="reset()">reset</button> </td>
+    </tr>
+</table>
+<p id="sa"> </p>
+<p id="so"> </p>
+
+<script>
+    function kq1() {
+        let diem1 = document.getElementById("a").value;
+        let diem2 = document.getElementById("b").value;
+        let diem3 = document.getElementById("c").value;
+        let tinhtong;
+        tinhtong = (parseFloat(diem1))+(parseFloat(diem2))+(parseFloat(diem3));
+        document.getElementById("sa").innerText = Math.round(tinhtong * 100)/100;
+    }
+    function kq2(){
+        let d1 = document.getElementById("a").value;
+        let d2 = document.getElementById("b").value;
+        let d3 = document.getElementById("c").value;
+        let tinhtb;
+        tinhtb = (parseFloat(d1)+parseFloat(d2)+parseFloat(d3))/3;
+        document.getElementById("so").innerText = Math.round(tinhtb * 100)/100;
+    }
+    function reset() {
+        let d1 = document.getElementById("a").value = " ";
+        let d2 = document.getElementById("b").value = " ";
+        let d3 = document.getElementById("c").value = " ";
+        let kq1 = document.getElementById("sa").innerText = " ";
+        let kq2 = document.getElementById("so").innerText = " ";
+    }
+</script>
+</body>
+</html>
