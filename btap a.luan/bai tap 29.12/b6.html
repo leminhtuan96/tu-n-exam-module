@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timx(arr,x) {
+        for (i=0;i<arr.length;i++){
+            if (arr.indexOf(x)==-1){
+                document.write(x + "khong ton tai")
+                break;
+            }else {
+                document.write(x+"co ton tai")
+                break;
+            }
+        }
+    }
+    timx([1,2,3,4,5,6],5)
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai 7
+    function num(n) {
+        let resul = [];
+        thuong = Math.floor(n/2);
+        while (thuong!==0){
+            du = n-(thuong*2);
+            resul.push(du);
+            n=thuong;
+            thuong=Math.floor(n/2);
+        }
+        if (thuong === 0){
+            resul.push(1)
+        }
+        return resul.reverse();
+    }
+    console.log(num(6))
+</script>
+</body>
+</html>

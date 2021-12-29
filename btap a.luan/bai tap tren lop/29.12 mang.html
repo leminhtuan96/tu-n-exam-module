@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let en = ["hi", "goodbye", "sorry"];
+    let vi = ["xinchao", "tambiet", "xinloi"];
+    let str = prompt("nhap vao");
+    let index;
+    for (let i = 0; i < en.length; i++) {
+        if (str.toLowerCase() == en[i].toLowerCase()) {
+            index = i;
+            break;
+        }
+    }
+    if (index >= 0) {
+        alert("dich la:" + vi[index]);
+    } else {
+        alert("chua cap nhat");
+    }
+
+</script>
+</body>
+</html>

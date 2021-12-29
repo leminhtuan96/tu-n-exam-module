@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai 5
+    let arr = [1, 2, 3, 4, 5, 7]
+
+    function checkSNT(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true
+    }
+
+    function tinhtich(arr) {
+        let tich = 1;
+        for (let i = 0; i < arr.length; i++) {
+            if (checkSNT(arr[i])) {
+                tich = tich * arr[i];
+            }
+        }
+        return tich;
+    }
+
+    document.write(tinhtich(arr))
+
+</script>
+</body>
+</html>
