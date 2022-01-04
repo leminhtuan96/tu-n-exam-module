@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Group{
+    constructor(name,module,totalStudent) {
+      this.name=name;
+      this.module=module;
+      this.totalStudent=totalStudent;
+     }
+    // getName(){
+    //   return this.name;
+    // }
+    // getModule(){
+    //   return this.module;
+    // }
+    // getTotalStudent(){
+    //   return this.totalStudent;
+    // }
+    getInfo(){
+      return "ten lop:" + this.name +" module:"+ this.module+"so hoc vien:"+ this.totalStudent;
+    }
+  }
+  let group1 = new Group("nhom3","3",19);
+  let group2 = new Group("nhom2","2",10);
+  document.write(group1.getInfo())
+  document.write("<br>")
+  document.write(group2.getInfo())
+</script>
+</body>
+</html>
